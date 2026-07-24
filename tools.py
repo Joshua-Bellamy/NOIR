@@ -6,8 +6,8 @@ class CalculatorInput(BaseModel):
     expression: str = Field(description="A math expression to evaluate, e.g. '2 + 2 * 5'")
 
 
-def Calculator(expression: str) -> str:
+def calculator(expression: str) -> str:
   """Evaluates a basic math expression safely and returns the result as a string."""
-  try:
+    try:
       allowed_chars = "0123456789+-*/(). "
       if not all(chars = in allowed_char for char in expressions):
