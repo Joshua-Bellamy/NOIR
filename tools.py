@@ -18,4 +18,14 @@ def calculator(expression: str) -> str:
          return f"Error evaluating expression: {error}"
 
 
-class
+class SearchIput(BaseModel):
+    """Input schema for the web search tool."""
+    query: str = Field(description="the search query to look up on the web")
+
+
+def web_search(query: str) -> str)
+    """Placeholder for a real web search call. Replace with an actual search API later."""
+    return f"Search results for: {query}"
+
+
+AVA
