@@ -11,3 +11,11 @@ def calculator(expression: str) -> str:
     try:
       allowed_chars = "0123456789+-*/(). "
       if not all(char in allowed_chars for char in expression):
+        return "Error: expression contains invalid characters"
+      result = eval(expression, {"__builtins__": {}}, {})
+      return str(result)
+     except Exception as error:
+         return f"Error evaluating expression: {error}"
+
+
+class
